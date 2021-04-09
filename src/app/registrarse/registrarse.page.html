@@ -1,0 +1,195 @@
+<style>
+  #titulo {
+    margin-left: 10px;
+    
+    color: #ffffff;
+ 
+  }
+  .titulo-container{
+   padding-bottom: 20px;
+  }
+ 
+  #malla{
+   margin-top: 165px;
+   color: #4a4747;
+ }
+ 
+
+ #terminos{
+   font-size: 11px;
+ }
+ .ion-text-end {
+   padding: 8px 0px 13px 0px;
+ }
+ .contenedor_Social {
+  position:relative;
+  right: 10px;
+}
+.facebook_btn_text {
+  color:#4867aa;
+}
+.google_btn_text {
+  background:linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ #social_icon_fa {
+   position: relative;
+   font-size: 43px;
+   left: 42px;
+   color:#4867aa;
+   z-index: 3;
+   background-image: linear-gradient(to bottom, transparent 20%, white 20%,white 93% , transparent 95%);
+   background-size: 43%;
+   background-position: 50% 0;
+   background-position-y: -3px;
+   background-repeat: no-repeat;
+ }
+ 
+ .dot {
+   text-align: center;
+  position: relative;
+  right: 5px;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 1;
+  margin-left: unset;
+ }
+ 
+ #social_icon_go {
+   position: relative;
+   font-size: 25px;
+   top: calc(45% - 10px); /* 50% - 3/4 of icon height */
+ }
+ .fa-google {
+   align-self: center;
+   background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   -webkit-text-fill-color: transparent;
+ }
+ #apple_icon {
+   font-size: 16px;
+   padding-right: 10px;
+ }
+ #contenedor_registro {
+   padding-top: 50px; 
+ }
+ #registrarse{
+   font-size:10px;
+   ;
+ }
+ #linea_blanca {
+   padding-top: 10px ;
+   margin: 0 auto;
+   border-bottom-style: solid;
+   border-color: white;
+   border-width: 5px;
+   width: 50%;
+ }
+ </style>
+ 
+ <ion-header>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+ </ion-header>
+ 
+ <ion-content color="base">
+ 
+   <ion-grid id="malla">
+     <ion-row>
+       <ion-col >
+             <div class="titulo-container">
+               <ion-tittle id="titulo" position="floating" color="light" >Registrarse</ion-tittle>
+             </div>
+       </ion-col>
+       </ion-row>
+ 
+ 
+     <ion-row>
+       <ion-col text-center>
+         <ion-item color="base" >
+           <ion-label position="floating" color="medium">Email</ion-label>
+           <ion-input></ion-input>
+           <ion-icon class="ion-align-self-center" slot="start" name="mail-outline" color="medium"  ></ion-icon>
+         </ion-item>
+         <ion-item color="base"> 
+           <ion-label position="floating" color="medium">Contraseña</ion-label>
+           <ion-input></ion-input>
+           <ion-icon class="ion-align-self-center" color="medium" slot="start" name="lock-closed-outline"></ion-icon>
+         </ion-item>
+         <div class="ion-text-center">
+           <ion-label >
+             <p>Al registrarse, aceptas nuestros</p>
+             <a id="terminos" href="">Terminos de Servicio   </a> 
+             <a> & </a>
+             <a id="terminos" href="">  Politica de privacidad  </a> 
+           </ion-label>
+         </div>
+         <ion-button href="/tabs" color="medium" expand="block">Registrarse</ion-button>
+         <div class="ion-text-center">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-1></ion-col>
+              <ion-col col-10>
+                <ion-item  lines="none" color="base" class="contenedor_Social" >
+                  <ion-button  style="text-transform:none"  color="light" > 
+                    <p class="facebook_btn_text" > Facebook</p>  </ion-button>
+                  <ion-icon  id="social_icon_fa" class="ion-align-self-center facebook_icon"  slot="start" name="logo-facebook"></ion-icon>
+                  <ion-item  lines="none" color="base">
+                    <ion-button style="text-transform:none" color="light">   
+                    <p class="google_btn_text" > Google </p>    
+                    </ion-button>
+                    <div class="dot" slot="end" > 
+                      <ion-icon id="social_icon_go" class="fab fa-google " slot="end" ></ion-icon>
+                    </div>
+                  </ion-item>
+                </ion-item>
+              </ion-col>
+              <ion-col col-1></ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-button color="light" expand="block">
+                  <ion-label slot="start">
+                    <ion-icon id="apple_icon" name="logo-apple"></ion-icon>
+                  </ion-label>
+                  <ion-label color="dark" >
+                    Sign in with apple
+                  </ion-label>
+                </ion-button>
+                <div id="contenedor_registro" class="ion-text-center">
+                    <ion-label  id="registrarse" >
+                      No tengo una cuenta 
+                      <a>Registrate Ahora</a>
+                    </ion-label>
+                    <div id="linea_blanca"></div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+         </div>
+       </ion-col>
+     </ion-row>
+   </ion-grid>
+ </ion-content>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

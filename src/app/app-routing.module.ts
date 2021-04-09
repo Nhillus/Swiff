@@ -5,6 +5,48 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'tab1',
+    loadChildren: () => import('./papelera/tab1.module').then(m => m.Tab1PageModule)
+  },
+  {
+    path: 'tab2',
+    loadChildren: () => import('./lupaPdf/tab2.module').then(m => m.Tab2PageModule)
+  },
+  {
+    path: 'tab3',
+    loadChildren: () => import('./notificaciones/tab3.module').then(m => m.Tab3PageModule)
+  },
+  {
+    path: 'tab4',
+    loadChildren: () => import('./menu/tab4.module').then(m => m.Tab4PageModule)
+  },
+  {
+    path: 'tab5',
+    loadChildren: () => import('./inicio/tab5.module').then(m => m.Tab5PageModule)
+  },
+
+  {
+    path: 'tab6',
+    loadChildren: () => import('./nube/tab6.module').then(m => m.Tab6PageModule)
+  },
+
+  {
+    path: 'tab7',
+    loadChildren: () => import('./calendario/tab7.module').then(m => m.Tab7PageModule)
+  },
+  {
+    path: 'tab8',
+    loadChildren: () => import('./mensajes/tab8.module').then(m => m.Tab8PageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registrarse',
+    loadChildren: () => import('./registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
   }
 ];
 @NgModule({
