@@ -47,6 +47,14 @@ const routes: Routes = [
   {
     path: 'registrarse',
     loadChildren: () => import('./registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
+  },
+  {
+    path: 'todos-documentos',
+    loadChildren: () => import('./todos-documentos/todos-documentos.module').then( m => m.TodosDocumentosPageModule)
+  },
+  {
+    path: 'plantillas',
+    loadChildren: () => import('./plantillas/plantillas.module').then( m => m.PlantillasPageModule)
   }
 ];
 @NgModule({

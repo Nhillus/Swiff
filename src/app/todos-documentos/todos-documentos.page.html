@@ -1,0 +1,67 @@
+<style>
+  .icon {
+  color:#6f70d8;
+  font-size: 34px;
+  }
+  .my_label{
+    font-size: 12px;
+  }
+  #linea_blanca {
+    padding-top: 10px ;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-color: #938977;
+    border-width: 5px;
+    width: 50%;
+    position: absolute;
+    right: 0px ;
+    left: 0px;
+    bottom: 0px;
+    --min-height: 0px;
+  }
+  .content {
+  position: relative;
+  }
+
+  ion-content.background{
+    --background: none;
+    background-image: url("../../assets/fondo_papelera/pngwing.com.png") ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    position: relative;
+  }
+
+  #Tittle_Descripcion_background {
+    position: absolute;
+    top:155px;
+    right: 0px ;
+    left: 10px;
+    bottom: 0px;
+  }
+  #Descripcion_background {
+    position: absolute;
+    right: 0px ;
+    left: 0px;
+    bottom: 170px;
+    font-size: 11px;
+  }
+
+
+  </style>
+  <ion-header>
+      <ion-toolbar color=base>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="ion-align-self-center">Todos Los Documentos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="content background">
+    <ion-title id="Tittle_Descripcion_background" class="ion-text-center">
+      Papeleria
+    </ion-title>
+    <ion-label id="Descripcion_background" class="ion-text-center">
+      un documento eliminado se almacena en la papelera hasta que lo elimine de forma permanente o restaure 
+    </ion-label>
+  </ion-content>
