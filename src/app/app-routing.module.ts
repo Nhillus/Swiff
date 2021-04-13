@@ -55,6 +55,14 @@ const routes: Routes = [
   {
     path: 'plantillas',
     loadChildren: () => import('./plantillas/plantillas.module').then( m => m.PlantillasPageModule)
+  },
+  {
+    path: 'buscador',
+    loadChildren: () => import('./buscador/buscador.module').then( m => m.BuscadorPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   }
 ];
 @NgModule({

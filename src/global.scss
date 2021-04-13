@@ -38,4 +38,33 @@ ion-tab-button{
 ion-toolbar{
     color:#ffffff;
 }
+.searchbar-input {
+    background: #FFF !important;
+    height: 20px !important;
+    max-width: 400px;
+    font-size: 11px !important;
+    border: 1px solid transparent;
+}
+.searchbar-search-icon {
+    left: 16px !important;
+    top: 0px !important;
+    width: 21px !important;
+    height: 21px !important;
+}
 
+.ion-color-footer {
+--ion-color-base: var(--ion-color-footer) !important;
+--ion-color-base-rgb: var(--ion-color-footer-rgb) !important;
+--ion-color-contrast: var(--ion-color-footer-contrast) !important;
+--ion-color-contrast-rgb: var(--ion-color-footer-contrast-rgb) !important;
+--ion-color-shade: var(--ion-color-footer-shade) !important;
+--ion-color-tint: var(--ion-color-footer-tint) !important;
+}
+.ion-color-morado {
+--ion-color-base: var(--ion-color-morado) !important;
+--ion-color-base-rgb: var(--ion-color-morado-rgb) !important;
+--ion-color-contrast: var(--ion-color-morado-contrast) !important;
+--ion-color-contrast-rgb: var(--ion-color-morado-contrast-rgb) !important;
+--ion-color-shade: var(--ion-color-morado-shade) !important;
+--ion-color-tint: var(--ion-color-morado-tint) !important;    
+}
