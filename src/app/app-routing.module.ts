@@ -63,6 +63,10 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'vision',
+    loadChildren: () => import('./vision/vision.module').then( m => m.VisionPageModule)
   }
 ];
 @NgModule({
