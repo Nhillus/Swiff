@@ -2,16 +2,20 @@
 .add_secure {
  height: 20px;
  width: 20px;
+ border: 3px solid red ;
+ border-radius: 50%;
 }
 
 .list_secure {
   position: relative;
-  top:80px;
+  top:40px;
   background-color: #ebdabe;
 }
 
 .tipo_seguro {
-  font-size: 11px;
+  margin: 20px 0px;
+  position: relative;
+  font-size: 12px;
   padding-left:20px;
   padding-bottom: 20px;
 }
@@ -21,7 +25,6 @@
 
 ion-card {
   border-radius: 20px;
-  margin: 0;
 }
 
 .card_secure_header {
@@ -35,27 +38,31 @@ ion-card {
 }
 
 .secure_img {
+  margin-top: 10px;
   width: 60px;
   height: 40px;
 }
 
 .edit_secure {
+ 
  margin: 0;
 }
 
 .edit_secure_text {
-  font-size: 11px;
+  font-size: 10px;
   width: 11px;;
   
 }
 
-.secure_chip {
-  height: 70px;
-  width: 70px;
-}
-
 .col_chip {
   padding-bottom: 0px;
+}
+
+.secure_chip {
+  position: relative;
+  top:5px;
+  height: 80px;
+  width: 80px;
 }
 
 .data_secure_text {
@@ -66,22 +73,36 @@ ion-card {
   font-size: 11px ;
 }
 .data_secure_user{
-  
   margin: 0;
 }
 
+.card_content {
+  padding: 0;
+}
+
+.grid_content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.row_content {
+  position: relative;
+  bottom: 5px;
+
+}
 .data_secure_user ion-label {
   font-size: 11px ;
   
 }
-
 .bandera_pais{
-  width: 30px;
-  height: 30px;
+  position:relative;
+  top:10px;
+  width: 25px;
+  height: 25px;
 }
 
 .foto_policy_label {
-  font-size: 11px;
+  font-size: 8px;
 }
 
 .contenedor_policy{
@@ -90,9 +111,10 @@ ion-card {
   background:transparent;
 }
 .secure_police {
-  width:40px;
-  height: 60px;
-  border: 6px solid #ebdabe;
+  position: relative;
+  width: 55px;
+  height: 70px;
+  border: 7px solid #ebdabe;
 }
 </style>
 
@@ -108,8 +130,8 @@ ion-card {
 <ion-content color=footer>
   
   <ion-fab  horizontal="end" vertical="top" slot="fixed">
-    <ion-fab-button class="add_secure" color="danger">
-      <ion-icon name="add"></ion-icon>
+    <ion-fab-button class="add_secure" color="footer">
+      <ion-icon color=red name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 
@@ -122,6 +144,73 @@ ion-card {
               <ion-col class="columna_header_img">
                 <ion-card-subtitle>
                   <ion-img class="secure_img" src="\assets\Sanitas\Sanitas_(Krankenkasse)_logo.svg.png"></ion-img>  
+                </ion-card-subtitle>
+              </ion-col>
+              <ion-col >
+                <div class="ion-text-end">
+                    <ion-label color=morado class="edit_secure_text" >Editar</ion-label>      
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="col_chip">
+                <ion-image>
+                  <img class="secure_chip" src="\assets\Sanitas\Chip.png">               
+                </ion-image>
+              </ion-col>
+              <ion-col class="data_secure_text">
+                <div class="ion-text-end"> 
+                  <ion-label>8004 Zurich</ion-label>
+                </div>
+                <div class="ion-text-end"> 
+                  <ion-label>+41 79 876 90 72</ion-label>
+                </div>
+                <div class="ion-text-end"> 
+                  <ion-label>Pruebas@hotmail.com</ion-label>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-header>
+      
+        <ion-card-content class="card_content">
+          <ion-grid class="grid_content">
+            <ion-row class="row_content">
+              <ion-col class="data_secure_user">
+                <ion-label>Yason, Sanchez Perez</ion-label>
+                <ion-label> 11.03.1976 ( M )</ion-label>
+                <div>
+                  <ion-image>
+                    <img class="bandera_pais" src="\assets\Banderas\bandera_suiza_2.png">
+                  </ion-image>
+                </div>
+              </ion-col>
+              <ion-col>
+                <div class="ion-text-end">
+                  <ion-label class="foto_policy_label"> Foto de la Poliza </ion-label>
+                </div>
+                <div class="ion-text-end ">
+                  <ion-iteam class="contenedor_policy">
+                    <ion-image>
+                      <img class="secure_police" src="\assets\Polizas\Carta.jpg">
+                    </ion-image>
+                  </ion-iteam>     
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-label  class="tipo_seguro" >Seguro de auto</ion-label>
+      <ion-card>
+        <ion-card-header class="card_secure_header">
+          <ion-grid class="grid_header" >
+            <ion-row >
+              <ion-col class="columna_header_img">
+                <ion-card-subtitle>
+                  <ion-img class="secure_img" src="\assets\AXA_seguros\axa.png"></ion-img>  
                 </ion-card-subtitle>
               </ion-col>
               <ion-col >
@@ -151,9 +240,9 @@ ion-card {
           </ion-grid>
         </ion-card-header>
       
-        <ion-card-content>
-          <ion-grid>
-            <ion-row>
+        <ion-card-content class="card_content">
+          <ion-grid class="grid_content">
+            <ion-row class="row_content">
               <ion-col class="data_secure_user">
                 <ion-label>Yason, Sanchez Perez</ion-label>
                 <ion-label> 11.03.1976 ( M )</ion-label>
@@ -180,6 +269,140 @@ ion-card {
           
         </ion-card-content>
       </ion-card>
+
+      <ion-label  class="tipo_seguro" >Seguro de responsabilidad</ion-label>
+      <ion-card>
+        <ion-card-header class="card_secure_header">
+          <ion-grid class="grid_header" >
+            <ion-row >
+              <ion-col class="columna_header_img">
+                <ion-card-subtitle>
+                  <ion-img class="secure_img" src="\assets\helvetia\Helvetia.png"></ion-img>  
+                </ion-card-subtitle>
+              </ion-col>
+              <ion-col >
+                <div class="ion-text-end">
+                    <ion-label class="edit_secure_text" >Editar</ion-label>      
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="col_chip">
+                <ion-image>
+                  <img class="secure_chip" src="\assets\Sanitas\Chip.png">               
+                </ion-image>
+              </ion-col>
+              <ion-col class="data_secure_text">
+                <div class="ion-text-end"> 
+                  <ion-label>8004 Zurich</ion-label>
+                </div>
+                <div class="ion-text-end"> 
+                  <ion-label>+41 79 876 90 72</ion-label>
+                </div>
+                <div class="ion-text-end"> 
+                  <ion-label>Pruebas@hotmail.com</ion-label>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-header>
+      
+        <ion-card-content class="card_content">
+          <ion-grid class="grid_content">
+            <ion-row class="row_content">
+              <ion-col class="data_secure_user">
+                <ion-label>Yason, Sanchez Perez</ion-label>
+                <ion-label> 11.03.1976 ( M )</ion-label>
+                <div>
+                  <ion-image>
+                    <img class="bandera_pais" src="\assets\Banderas\bandera_suiza_2.png">
+                  </ion-image>
+                </div>
+              </ion-col>
+              <ion-col>
+                <div class="ion-text-end">
+                  <ion-label class="foto_policy_label"> Foto de la Poliza </ion-label>
+                </div>
+                <div class="ion-text-end ">
+                  <ion-iteam class="contenedor_policy">
+                    <ion-image>
+                      <img class="secure_police" src="\assets\Polizas\Carta.jpg">
+                    </ion-image>
+                  </ion-iteam>     
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+        </ion-card-content>
+      </ion-card>
+
+      <ion-label  class="tipo_seguro" >Seguro de protecion legal</ion-label>
+      <ion-card>
+        <ion-card-header class="card_secure_header">
+          <ion-grid class="grid_header" >
+            <ion-row >
+              <ion-col class="columna_header_img">
+                <ion-card-subtitle>
+                  <ion-img class="secure_img" src="\assets\AXA_seguros\axa.png"></ion-img>  
+                </ion-card-subtitle>
+              </ion-col>
+              <ion-col >
+                <div class="ion-text-end">
+                    <ion-label class="edit_secure_text" >Editar</ion-label>      
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="col_chip">
+                <ion-image>
+                  <img class="secure_chip" src="\assets\Sanitas\Chip.png">               
+                </ion-image>
+              </ion-col>
+              <ion-col class="data_secure_text">
+                <div class="ion-text-end"> 
+                  <ion-label>8004 Zurich</ion-label>
+                </div>
+                <div class="ion-text-end"> 
+                  <ion-label>+41 79 876 90 72</ion-label>
+                </div>
+                <div class="ion-text-end"> 
+                  <ion-label>Pruebas@hotmail.com</ion-label>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-header>
+      
+        <ion-card-content class="card_content">
+          <ion-grid class="grid_content">
+            <ion-row class="row_content">
+              <ion-col class="data_secure_user">
+                <ion-label>Yason, Sanchez Perez</ion-label>
+                <ion-label> 11.03.1976 ( M )</ion-label>
+                <div>
+                  <ion-image>
+                    <img class="bandera_pais" src="\assets\Banderas\bandera_suiza_2.png">
+                  </ion-image>
+                </div>
+              </ion-col>
+              <ion-col>
+                <div class="ion-text-end">
+                  <ion-label class="foto_policy_label"> Foto de la Poliza </ion-label>
+                </div>
+                <div class="ion-text-end ">
+                  <ion-iteam class="contenedor_policy">
+                    <ion-image>
+                      <img class="secure_police" src="\assets\Polizas\Carta.jpg">
+                    </ion-image>
+                  </ion-iteam>     
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+        </ion-card-content>
+      </ion-card> 
   </ion-list>
 
  
