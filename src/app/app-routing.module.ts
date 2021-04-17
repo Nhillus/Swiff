@@ -71,6 +71,10 @@ const routes: Routes = [
   {
     path: 'ajustes-perfil',
     loadChildren: () => import('./ajustes-perfil/ajustes-perfil.module').then( m => m.AjustesPerfilPageModule)
+  },
+  {
+    path: 'ayuda',
+    loadChildren: () => import('./ayuda/ayuda.module').then( m => m.AyudaPageModule)
   }
 ];
 @NgModule({

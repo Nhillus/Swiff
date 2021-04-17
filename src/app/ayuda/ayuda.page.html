@@ -1,0 +1,132 @@
+<style>
+  .bienvenida_text_name{
+    font-size: 22px;
+    margin: 10px;
+    color:red;
+  }
+
+  .bienvenida_text{
+    font-size: 22px;
+    margin: 10px;
+  }
+  .aclaratoria_text {
+    font-size: 8px;
+    margin: 10px;
+  }
+  ion-label {
+    margin:10px;
+  }
+  .Frequenly_ask {
+    font-size:11px;
+  }
+
+  #linea_negra {
+  padding-top: 10px ;
+  margin: 0 auto;
+  border-bottom-style: solid;
+  border-color:#808080;
+  border-width: 1px;
+  width: 95%;
+  --min-height: 0px;
+  }
+  .topic_answers {
+    font-size: 14px;
+  }
+  .how_use {
+    font-size:10px;
+    margin: 5px 10px;
+  }
+
+  .container_contact {
+    margin-top: 20px;
+  }
+
+  .contact {
+    font-size:8px;
+    margin: 0px 10px;
+  }
+
+  #linea_blanca {
+  padding-top: 10px ;
+  margin: 0 auto;
+  border-bottom-style: solid;
+  border-color: #938977;
+  border-width: 5px;
+  width: 50%;
+  position: absolute;
+  right: 0px ;
+  left: 0px;
+  bottom: 0px;
+  --min-height: 0px;
+  }
+
+</style>
+
+<ion-header>
+  <ion-toolbar color=base>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ayuda/FAQ</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-row>
+      <ion-label class="bienvenida_text_name" >Hola Jayson </ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="bienvenida_text" >¿Como podemos ayudarte?</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="aclaratoria_text"> Esta es la forma mas rapida de ayudarlo: encuentre actualizaciones sobre sus respuestas y sobre todos los temas</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label> Sugerido para ti</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="Frequenly_ask"> ¿Cuanto tiempo tardará un ascesor de seguros en acudir a mi?</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="Frequenly_ask"> ¿Que seguro son mis datos personales?</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="Frequenly_ask"> ¿Cual es la funcion del calendario?</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="Frequenly_ask"> ¿Cual es el sentido de esta pagina?</ion-label>
+    </ion-row>
+    <ion-item id="linea_negra"></ion-item>
+    <ion-row>
+      <ion-title class="topic_answers" >
+        Encontrar Respuestas por Tema
+      </ion-title>
+    </ion-row>
+    <ion-row>
+      <ion-label class="how_use" >Notificaciones</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="how_use">Lupa</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="how_use">Papeleria</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="how_use">Menu</ion-label>
+    </ion-row>
+    <div class="container_contact">
+      <ion-row>
+        <ion-label class="contact">Swiff - CH</ion-label>
+      </ion-row>
+      <ion-row>
+        <ion-label class="contact">Info@swiff.com</ion-label>
+      </ion-row>
+      <ion-row>
+        <ion-label class="contact">Zurich / Schweiz</ion-label>
+      </ion-row>
+    </div>
+
+
+    <ion-item id="linea_blanca"></ion-item>
+
+</ion-content>
