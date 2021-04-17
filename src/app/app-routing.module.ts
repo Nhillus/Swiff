@@ -67,6 +67,10 @@ const routes: Routes = [
   {
     path: 'vision',
     loadChildren: () => import('./vision/vision.module').then( m => m.VisionPageModule)
+  },
+  {
+    path: 'ajustes-perfil',
+    loadChildren: () => import('./ajustes-perfil/ajustes-perfil.module').then( m => m.AjustesPerfilPageModule)
   }
 ];
 @NgModule({
