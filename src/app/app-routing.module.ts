@@ -79,6 +79,10 @@ const routes: Routes = [
   {
     path: 'ajustes',
     loadChildren: () => import('./ajustes/ajustes.module').then( m => m.AjustesPageModule)
+  },
+  {
+    path: 'idiomas',
+    loadChildren: () => import('./idiomas/idiomas.module').then( m => m.IdiomasPageModule)
   }
 ];
 @NgModule({
