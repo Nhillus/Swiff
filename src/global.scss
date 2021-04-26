@@ -1,0 +1,135 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+
+
+
+ion-tab-button{
+    background-color:#14192D;
+
+}
+
+ion-toolbar{
+    color:#ffffff;
+}
+.searchbar-input {
+    background: #FFF !important;
+    height: 20px !important;
+    max-width: 400px;
+    font-size: 11px !important;
+    border: 1px solid transparent;
+}
+.searchbar-search-icon {
+    left: 16px !important;
+    top: 0px !important;
+    width: 21px !important;
+    height: 21px !important;
+}
+
+.ion-color-footer {
+--ion-color-base: var(--ion-color-footer) !important;
+--ion-color-base-rgb: var(--ion-color-footer-rgb) !important;
+--ion-color-contrast: var(--ion-color-footer-contrast) !important;
+--ion-color-contrast-rgb: var(--ion-color-footer-contrast-rgb) !important;
+--ion-color-shade: var(--ion-color-footer-shade) !important;
+--ion-color-tint: var(--ion-color-footer-tint) !important;
+}
+.ion-color-morado {
+--ion-color-base: var(--ion-color-morado) !important;
+--ion-color-base-rgb: var(--ion-color-morado-rgb) !important;
+--ion-color-contrast: var(--ion-color-morado-contrast) !important;
+--ion-color-contrast-rgb: var(--ion-color-morado-contrast-rgb) !important;
+--ion-color-shade: var(--ion-color-morado-shade) !important;
+--ion-color-tint: var(--ion-color-morado-tint) !important;    
+}
+
+.ion-color-moradito {
+--ion-color-base: var(--ion-color-moradito) !important;
+--ion-color-base-rgb: var(--ion-color-moradito-rgb) !important;
+--ion-color-contrast: var(--ion-color-moradito-contrast) !important;
+--ion-color-contrast-rgb: var(--ion-color-moradito-contrast-rgb) !important;
+--ion-color-shade: var(--ion-color-moradito-shade) !important;
+--ion-color-tint: var(--ion-color-moradito-tint) !important;
+
+}
+.ion-color-red {
+--ion-color-base: var(--ion-color-red) !important;
+--ion-color-base-rgb: var(--ion-color-red-rgb) !important;
+--ion-color-contrast: var(--ion-color-red-contrast) !important;
+--ion-color-contrast-rgb: var(--ion-color-red-contrast-rgb) !important;
+--ion-color-shade: var(--ion-color-red-shade) !important;
+--ion-color-tint: var(--ion-color-red-tint) !important;    
+}
+
+.ion-color-white {
+    --ion-color-base: var(--ion-color-white) !important;
+    --ion-color-base-rgb: var(--ion-color-white-rgb) !important;
+    --ion-color-contrast: var(--ion-color-white-contrast) !important;
+    --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb) !important;
+    --ion-color-shade: var(--ion-color-white-shade) !important;
+    --ion-color-tint: var(--ion-color-white-tint) !important;    
+    }
+.cal-modal {
+    --height: 80%;
+    --border-radius: 10px;
+    padding: 25px;
+}
+
+.monthview-selected {
+    background-color: #9281df !important;
+    color: #333 !important;
+    border-radius: 50% !important;
+   
+}
+
+.monthview-primary-with-event, .calendar-event-inner{
+    background-color: #1a92d0!important;
+  
+}
+td, th {
+    border: 0 !important;
+   
+  }
+
+td {
+    font-size: 13px;
+    font-weight: bold;
+  
+}
+
+
+td.monthview-selected {
+    height: 10px !important;
+    width: 10px !important; 
+
+} 
+
+.monthview-primary-with-event {
+    border-radius: 50%;
+}

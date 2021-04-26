@@ -1,0 +1,169 @@
+<style>
+
+  .container_label_language {
+    margin-top: 25px;
+  }
+
+  .label_language {
+    font-size: 11px;
+  }
+
+  .pa {
+    position: relative;
+}
+  .pais {
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+  .container_round_flag {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .container_round_flag img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
+  .text_country {
+    width: 68px;
+    font-size: 11px;
+  }
+
+  .text_language_acronym {
+    font-size: 11px;
+  }
+
+  .container_round_dot_grey {
+    padding: 5px 5px; 
+  }
+
+  .punto_gris {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .container_arrow_right {
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+ 
+  .label_languages {
+    font-size: 11px;
+
+  }
+</style>
+
+<ion-header>
+  <ion-toolbar color=base>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title>idiomas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="container_label_language">  
+    <ion-label class="label_language"> IDIOMA ACTUAL EN SWIFF</ion-label>
+  </ion-item>
+  <ion-toolbar class="pa">
+    <ion-item lines="none" class="pais">
+      <div class="container_round_flag">
+        <ion-img class="foto_idioma" src="assets\Banderas\bandera_suiza_2.png"></ion-img>
+      </div>
+      <ion-col>
+        <ion-label class="text_country">Pais</ion-label>
+        <ion-label class="text_language_acronym" >Suiza</ion-label>
+      </ion-col>
+    </ion-item>
+    <div>
+      <ion-item lines="none" class="container_arrow_right">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+    </div>
+  </ion-toolbar>
+
+  <ion-item  >
+    <ion-label class="label_languages">IDIOMAS DE SWIFF</ion-label>
+  </ion-item>
+
+  <ion-toolbar class="pa">
+    <ion-item lines="none" class="pais">
+      <div class="container_round_flag">
+        <ion-img class="foto_idioma" src="assets\Banderas\bandera_espana.jpg
+        "></ion-img>
+      </div>
+      <ion-col>
+        <ion-label class="text_language_acronym" >Español</ion-label>
+      </ion-col>
+    </ion-item>
+  </ion-toolbar>
+  <ion-toolbar class="pa">
+    <ion-item lines="none" class="pais">
+      <div class="container_round_flag">
+        <ion-img class="foto_idioma" src="assets\Banderas\italina.png"></ion-img>
+      </div>
+      <ion-col>
+        <ion-label class="text_language_acronym" >Italiano</ion-label>
+      </ion-col>
+    </ion-item>
+  </ion-toolbar>
+  <ion-toolbar class="pa">
+    <ion-item lines="none" class="pais">
+      <div class="container_round_flag">
+        <ion-img class="foto_idioma" src="assets\Banderas\Francia.png"></ion-img>
+      </div>
+      <ion-col>
+        <ion-label class="text_language_acronym" >Frances</ion-label>
+      </ion-col>
+    </ion-item>
+  </ion-toolbar>
+  <ion-toolbar class="pa">
+    <ion-item lines="none" class="pais">
+      <div class="container_round_flag">
+        <ion-img class="foto_idioma" src="assets\Banderas\bandera_estados_unidos.png"></ion-img>
+      </div>
+      <ion-col>
+        <ion-label class="text_language_acronym" >Ingles</ion-label>
+      </ion-col>
+    </ion-item>
+  </ion-toolbar>
+
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom" color="dark">
+      <ion-tab-button href="/tab1">
+        <ion-icon name="trash-outline"></ion-icon>
+        <ion-label>Papelera</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab2">
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-label>Lupa PDF</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab3">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-label>Notificaciones</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab4">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-label>Menu</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  
+  </ion-tabs>
+
+</ion-content>

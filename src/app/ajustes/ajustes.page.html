@@ -1,0 +1,235 @@
+<style>
+  .pa {
+  position: relative;
+}
+  .pais {
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+  .container_round_flag {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .container_round_flag img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
+  .text_country {
+    width: 68px;
+    font-size: 11px;
+  }
+
+  .text_language_acronym {
+    font-size: 11px;
+  }
+
+  .container_round_dot_grey {
+    padding: 5px 5px; 
+  }
+
+  .punto_gris {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .container_arrow_right {
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .about_text {
+    font-size: 8px;
+  }
+
+  #linea_gris {
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-color: #938977;
+    border-width: 1px;
+    width: 95%;
+    position: absolute;
+    right: 0px ;
+    left: 0px;
+    --min-height: 0px;
+  }
+  .chose_laguage_text {
+    font-size:9px;
+    margin: 10px 10px 30px 10px;
+  }
+
+  .container_simbol_touch_id {
+    margin-top: 10px;
+  }
+
+  .simbol_touch_id {
+    height: 25px;
+    width: 25px;
+  }
+
+  .label_touch_id{
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .touch_id_toggle {
+    position: relative;
+    float: right;
+  }
+
+  .description_touch_id {
+    font-size: 7px;
+  }
+
+  .title_compartir {
+    margin: 10px;
+    font-size: 11px;
+  }
+
+  .simbol_compartir {
+    height: 25px;
+    width: 25px;
+  }
+
+  .label_compartir{
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .description_compartir_redes {
+    font-size: 7px;
+  }
+
+</style>
+<ion-header>
+  <ion-toolbar color=base>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ajustes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar class="pa">
+    <ion-item lines="none" class="pais">
+      <div class="container_round_flag">
+        <ion-img class="foto_idioma" src="assets\Banderas\bandera_suiza_2.png"></ion-img>
+      </div>
+      <ion-col>
+        <ion-label class="text_country">Pais</ion-label>
+        <ion-label class="text_language_acronym" >Suiza</ion-label>
+      </ion-col>
+    </ion-item>
+    <div>
+      <ion-item lines="none" class="container_arrow_right">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+    </div>
+  </ion-toolbar>
+  <ion-item id="linea_gris"></ion-item>
+  <ion-label class="chose_laguage_text"> Elige tu idioma</ion-label>
+  <ion-item class="container_simbol_touch_id">
+    <ion-col>
+      <ion-row>
+        <ion-image>
+          <img class="simbol_touch_id" src="\assets\Simbolos\touch_id.png" >
+        </ion-image>
+        <ion-label class="label_touch_id">Touch ID</ion-label>
+      </ion-row>
+    </ion-col>
+      <ion-toggle class="touch_id_toggle" ></ion-toggle>
+  </ion-item>
+  <ion-item id="linea_gris"></ion-item>
+  <ion-item class="container_description_touch_id">
+    <ion-label class="ion-text-wrap description_touch_id" >Ahorrse la molestia de ingresar su contraseña y direccion de correo eletronico active la identificacion  tactil para que podamos reconocerlo 
+      a traves de su huella digital e iniciar sesion.</ion-label>
+  </ion-item>
+  <ion-item class="container_simbol_touch_id">
+    <ion-col>
+      <ion-row>
+        <ion-image>
+          <img class="simbol_touch_id" src="\assets\Simbolos\Capanita_de_notificaciones.png" >
+        </ion-image>
+        <ion-label class="label_touch_id">Notificaciones </ion-label>
+      </ion-row>
+    </ion-col>
+      <ion-toggle class="touch_id_toggle" ></ion-toggle>
+  </ion-item>
+  <ion-item id="linea_gris"></ion-item>
+  <ion-item class="container_description_touch_id">
+    <ion-label class="ion-text-wrap description_touch_id" > Desactiva y activa tu alerta de notificaciones si la tienes activada recibiras todas las informacion, cambios y novedades que estan en la app Swiff. </ion-label>
+  </ion-item>
+  <ion-item class="container_simbol_touch_id">
+    <ion-col>
+      <ion-row>
+        <ion-image>
+          <img class="simbol_touch_id" src="\assets\Simbolos\calendario.png" >
+         </ion-image> 
+        <ion-label class="label_touch_id">Calendario</ion-label>
+      </ion-row>
+    </ion-col>
+      <ion-toggle class="touch_id_toggle" ></ion-toggle>
+  </ion-item>
+  <ion-item id="linea_gris"></ion-item>
+  <ion-item class="container_description_touch_id">
+    <ion-label class="ion-text-wrap description_touch_id"> Desactiva y activa tu calendario si lo tienes activado podras utilizar todas sus funciones  </ion-label>
+  </ion-item>
+  <ion-label class="title_compartir" > Compartir Con las Redes Sociales </ion-label>
+  <ion-item>
+    <ion-col>
+      <ion-row>
+        <ion-image>
+          <img class="simbol_compartir" src="\assets\Simbolos\compartir_logo.png" > 
+         </ion-image> 
+        <ion-label class="label_compartir">Compartir</ion-label>
+      </ion-row>
+    </ion-col>
+      <ion-icon color=black name="arrow-redo"></ion-icon>
+  </ion-item>
+  <ion-item id="linea_gris"></ion-item>
+  <ion-item >
+    <ion-label class="ion-text-wrap description_compartir_redes"> Aqui le puedes enviar y compartir la aplicaiones con todos tus amigos o familiares asi ellos tambien pueden disfrutar de la aplicacion swiff en todas sus funciones totalmente  </ion-label>
+  </ion-item>
+
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom" color="dark">
+      <ion-tab-button href="/tab1">
+        <ion-icon name="trash-outline"></ion-icon>
+        <ion-label>Papelera</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab2">
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-label>Lupa PDF</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab3">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-label>Notificaciones</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab4">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-label>Menu</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  
+  </ion-tabs>
+  
+
+  
+</ion-content>

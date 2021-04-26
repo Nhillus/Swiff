@@ -1,0 +1,39 @@
+<style>
+  .container_buscador {
+    width: 77%;
+  }
+  .buscador {
+    font-size: 11px;
+  }
+  .searchbar-input {
+    background: #FFF !important;
+    border-radius: 30px !important;
+    height: 40px !important;
+    max-width: 400px;
+    font-size: 1.25em !important;
+    border: 1px solid transparent;
+  }
+  ion-content.background{
+    --background: none;
+    background-image:url("../../assets/Fondo_buscador/search-sharp.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    position: relative;
+  }
+
+</style>
+<ion-header>
+  <ion-toolbar color=base>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+      <div class="container_buscador">
+        <ion-searchbar  class="buscador" animated placeholder="Buscar Documentos"></ion-searchbar>
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="content background">
+  <ion-item id="linea_blanca"></ion-item>
+</ion-content>

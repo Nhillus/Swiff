@@ -1,0 +1,177 @@
+<style>
+  .pa {
+    position: relative;
+  }
+  .idiomas {
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+  .container_round_flag {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .container_round_flag img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
+  .text_language {
+    width: 68px;
+    font-size: 11px;
+  }
+  
+  .text_language_acronym {
+    font-size: 11px;
+  }
+  
+  .container_round_dot_grey {
+    padding: 5px 5px; 
+  }
+  
+  .punto_gris {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .nosotros {
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+  
+  .about_text {
+    font-size: 8px;
+  }
+  
+  .avatar{ 
+    margin: 0 auto;
+  }
+  
+  .user_edit {
+    position: relative;
+    top:60px;
+  }
+
+  .user_edit ion-item {
+    font-size: 11px;
+    height: 40px;
+    border-bottom: 1px solid #a59986;
+    padding: 0px 5px;
+  }
+
+  ion-fab-button {
+    --background:transparent
+  }
+  
+  .add_secure {
+  position: relative;
+  left: 50px;
+  height: 20px;
+  width: 20px;
+  border: 3px solid red ;
+  border-radius: 50%;
+  }
+
+  .usuario {
+    margin: 0 auto;
+  }
+  
+  .alias {
+    font-size: 11px;
+  } 
+
+  .identidad {
+    font-size: 11px;
+    padding-left: 5px;
+  }
+  
+  .ifu {
+    padding-top: 40px;
+  }
+  
+  .ifui_center {
+    text-align: center;
+  }
+
+  .container_info {
+    box-shadow: none !important;
+  }
+
+  #linea_blanca {
+  padding-top: 10px ;
+  margin: 0 auto;
+  border-bottom-style: solid;
+  border-color: #938977;
+  border-width: 5px;
+  width: 50%;
+  position: absolute;
+  right: 0px ;
+  left: 0px;
+  bottom: 0px;
+  --min-height: 0px;
+}
+  
+</style>
+  <ion-header>
+    <ion-toolbar color=base>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Mi Perfil de Ajustes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <br>
+    <br>
+    
+    <ion-row>  
+      <ion-avatar class="ion-margin avatar">
+        <ion-fab >
+          <ion-fab-button  class="add_secure" >
+            <ion-icon color=red name="add"></ion-icon>
+        </ion-fab-button>
+        </ion-fab>
+        <img src= "\assets\Foto_Perfil\hombre_modelo.jpg">
+      </ion-avatar>
+    </ion-row>
+    <ion-item lines="none">
+      <ion-row class="usuario" >
+        <ion-label class="alias" >Sr. |  </ion-label>
+        <ion-label class="identidad" >Yason Sanchez Perez </ion-label>
+      </ion-row>
+    </ion-item>
+    <ionn-list class="user_edit">
+      <ion-card class="container_info">
+        <ion-item>
+          <ion-label>Nombre</ion-label>
+          <ion-input  type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Apellido</ion-label>
+          <ion-input  type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Contraseña Actual</ion-label>
+          <ion-input  type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Contraseña Nueva</ion-label>
+          <ion-input  type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Confirmar Contraseña</ion-label>
+          <ion-input  type="text"></ion-input>
+        </ion-item>
+      </ion-card>
+    </ionn-list>
+    <ion-item id="linea_blanca"></ion-item>
+    </ion-content>

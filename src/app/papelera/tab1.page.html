@@ -1,0 +1,50 @@
+<style>
+.icon {
+  color:#6f70d8;
+  font-size: 34px;
+}
+.my_label{
+  font-size: 12px;
+}
+#linea_blanca {
+  padding-top: 10px ;
+  margin: 0 auto;
+  border-bottom-style: solid;
+  border-color: #938977;
+  border-width: 5px;
+  width: 50%;
+  position: absolute;
+  right: 0px ;
+  left: 0px;
+  bottom: 0px;
+  --min-height: 0px;
+}
+.content {
+  position: relative;
+}
+</style>
+<ion-header>
+    <ion-toolbar color=base>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-align-self-center">Papeleria</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="content">
+  <ion-list>
+    <ion-item>
+      <ion-item>
+        <ion-icon class="icon" name="folder"></ion-icon>
+      </ion-item>
+      <ion-label class="my_label">Todos Los Documentos</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-item >
+        <ion-icon class="icon"   name="folder"></ion-icon>
+      </ion-item>
+      <ion-label class="my_label">Template</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-item id="linea_blanca"></ion-item>
+</ion-content>
