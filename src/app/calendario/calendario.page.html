@@ -1,0 +1,120 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-tabs>
+
+      <ion-tab-bar slot="bottom" color="dark">
+        <ion-tab-button href="/tab5">
+          <ion-icon name="cloud-upload-outline"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button href="/tab6">
+          <ion-icon name="cloud-outline"></ion-icon>
+          <ion-label>Nube</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button href="/calendario">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-label>Calendario</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button href="/tab8">
+          <ion-icon name="file-tray-outline"></ion-icon>
+          <ion-label>Mensajes</ion-label>
+        </ion-tab-button>
+    
+      </ion-tab-bar>
+    
+    </ion-tabs>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="calendar.mode">
+    <ion-segment-button value="month">
+      <ion-label>Mes</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="week">
+      <ion-label>Semana</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="day">
+      <ion-label>Dia</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+ 
+ 
+ 
+  <ion-row class="Fecha">
+    <!-- Move back one screen of the slides -->
+    <ion-col size="2">
+      <ion-button fill="clear" (click)="back()">
+        <ion-icon color=white name="arrow-back" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-col>
+ 
+    <ion-col  size="6" class="ion-text-center">
+      <ion-tittle class="label_text_fecha ion-allign-self-center">{{ viewTitle }}</ion-tittle>
+    </ion-col>
+
+      <!-- Move forward one screen of the slides -->
+      <ion-col size="2">
+        <ion-button color=white fill="clear" (click)="next()">
+          <ion-icon  name="arrow-forward" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+    
+    <ion-col size="2" class="add_container" size="2">
+      <ion-button class="add_button" color=moradito (click)="openCalModal()">
+          <ion-icon class="add_button_color" name="add" slot="icon-only"></ion-icon>
+        </ion-button>
+    </ion-col>
+    
+  
+  </ion-row>
+
+  <calendar
+    [locale]="calendar.locale"
+    [eventSource]="eventSource"
+    [calendarMode]="calendar.mode"
+    [currentDate]="calendar.currentDate"
+    (onEventSelected)="onEventSelected($event)"
+    (onTitleChanged)="onViewTitleChanged($event)"
+    startHour="6"
+    endHour="20"
+    step="30"
+    startingDayWeek="1">
+  </calendar>
+ 
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom" color="dark">
+      <ion-tab-button href="/tab1">
+        <ion-icon name="trash-outline"></ion-icon>
+        <ion-label>Papelera</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab2">
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-label>Lupa PDF</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab3">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-label>Notificaciones</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button href="/tab4">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-label>Menu</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  
+  </ion-tabs>
+</ion-toolbar>
+</ion-footer>

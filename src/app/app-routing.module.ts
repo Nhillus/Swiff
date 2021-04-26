@@ -33,8 +33,8 @@ const routes: Routes = [
   },
 
   {
-    path: 'tab7',
-    loadChildren: () => import('./calendario/tab7.module').then(m => m.Tab7PageModule)
+    path: 'calendario',
+    loadChildren: () => import('./calendario/calendario.module').then(m => m.CalendarioPageModule)
   },
   {
     path: 'tab8',
@@ -83,7 +83,12 @@ const routes: Routes = [
   {
     path: 'idiomas',
     loadChildren: () => import('./idiomas/idiomas.module').then( m => m.IdiomasPageModule)
-  }
+  },
+  {
+    path: 'cal-modal',
+    loadChildren: () => import('./cal-modal/cal-modal.module').then( m => m.CalModalPageModule)
+  },
+  
 ];
 @NgModule({
   imports: [
