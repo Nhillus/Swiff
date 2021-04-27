@@ -1,5 +1,7 @@
 {
   "name": "swiff",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -31,4 +31,18 @@
     lockSwipes="true"
   >
   </calendar>
+  <ion-grid>
+    <ion-row >
+      <ion-col size=12>
+        <ion-item>
+            <input style="display:none;" type="file" accept="image/*, .pdf, .doc, .docx" (change)="fileSelected($event)" #chosenFile /> 
+            <ion-button color=moradito class="btnAttach" (click)="chosenFile.click()">
+              <ion-icon class="attach_icon" color=white name="document-attach-outline"></ion-icon>
+              <ion-label color=white>Añadir Fotos/Documentos</ion-label>
+            </ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
