@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
@@ -41,7 +41,7 @@ const routes: Routes = [
     loadChildren: () => import('./mensajes/tab8.module').then(m => m.Tab8PageModule)
   },
   {
-    path: 'login',
+    path: '',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
@@ -87,7 +87,15 @@ const routes: Routes = [
   {
     path: 'cal-modal',
     loadChildren: () => import('./cal-modal/cal-modal.module').then( m => m.CalModalPageModule)
+  },  {
+    path: 'selecion-sexo',
+    loadChildren: () => import('./selecion-sexo/selecion-sexo.module').then( m => m.SelecionSexoPageModule)
   },
+  {
+    path: 'selecion-seguro',
+    loadChildren: () => import('./selecion-seguro/selecion-seguro.module').then( m => m.SelecionSeguroPageModule)
+  },
+
   
 ];
 @NgModule({
