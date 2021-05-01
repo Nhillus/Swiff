@@ -77,11 +77,15 @@
    padding-right: 10px;
  }
  #contenedor_registro {
-   padding-top: 50px; 
- }
+  padding-top: 50px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px; 
+}
  #registrarse{
    font-size:10px;
-   ;
+    color: white;
  }
  #linea_blanca {
    padding-top: 10px ;
@@ -133,23 +137,12 @@
          <div class="ion-text-center">
           <ion-grid>
             <ion-row>
-              <ion-col col-1></ion-col>
-              <ion-col col-10>
-                <ion-item  lines="none" color="base" class="contenedor_Social" >
-                  <ion-button  style="text-transform:none"  color="light" > 
-                    <p class="facebook_btn_text" > Facebook</p>  </ion-button>
-                  <ion-icon  id="social_icon_fa" class="ion-align-self-center facebook_icon"  slot="start" name="logo-facebook"></ion-icon>
-                  <ion-item  lines="none" color="base">
-                    <ion-button style="text-transform:none" color="light">   
-                    <p class="google_btn_text" > Google </p>    
-                    </ion-button>
-                    <div class="dot" slot="end" > 
-                      <ion-icon id="social_icon_go" class="fab fa-google " slot="end" ></ion-icon>
-                    </div>
-                  </ion-item>
-                </ion-item>
+                <ion-col size=6 class="contenedor_Social_Facebook" >
+                  <ion-img src="assets/RedesSociales/Facebook.png"></ion-img> 
+                </ion-col>
+                <ion-col size=6 class="contenedor_Social_Google">
+                  <ion-img src="assets/RedesSociales/Google.png"></ion-img> 
               </ion-col>
-              <ion-col col-1></ion-col>
             </ion-row>
             <ion-row>
               <ion-col>
@@ -161,19 +154,23 @@
                     Sign in with apple
                   </ion-label>
                 </ion-button>
-                <div id="contenedor_registro" class="ion-text-center">
-                    <ion-label  id="registrarse" >
-                      No tengo una cuenta 
-                      <a>Registrate Ahora</a>
-                    </ion-label>
-                    <div id="linea_blanca"></div>
-                </div>
               </ion-col>
             </ion-row>
           </ion-grid>
          </div>
        </ion-col>
      </ion-row>
+     <ion-row id="contenedor_registro" >
+      <ion-col size=12>
+        <div  class="ion-text-center">
+          <ion-label  id="registrarse" >
+            No tengo una cuenta 
+            <a href="registrarse">Registrate Ahora</a>
+          </ion-label>
+          <div id="linea_blanca"></div>
+        </div>
+      </ion-col>
+    </ion-row>
    </ion-grid>
  </ion-content>
  
