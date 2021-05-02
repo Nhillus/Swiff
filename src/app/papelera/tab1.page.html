@@ -22,13 +22,21 @@
 .content {
   position: relative;
 }
+.ios .icon_back {
+    padding-top: 9px;
+  }
+
+  .icon_back {
+    height: 30px;
+    width: 30px;
+  }
 </style>
 <ion-header>
     <ion-toolbar color=base>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
-    </ion-buttons>
-    <ion-title class="ion-align-self-center">Papeleria</ion-title>
+      <ion-button href="tabs" color="base" slot="start">
+        <ion-icon class="icon_back"  name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    <ion-title mode=md class="ion-align-self-center">Papeleria</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content class="content">

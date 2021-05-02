@@ -19,10 +19,6 @@ const routes: Routes = [
     loadChildren: () => import('./notificaciones/tab3.module').then(m => m.Tab3PageModule)
   },
   {
-    path: 'tab4',
-    loadChildren: () => import('./menu/tab4.module').then(m => m.Tab4PageModule)
-  },
-  {
     path: 'tab5',
     loadChildren: () => import('./inicio/tab5.module').then(m => m.Tab5PageModule)
   },
@@ -31,7 +27,6 @@ const routes: Routes = [
     path: 'tab6',
     loadChildren: () => import('./nube/tab6.module').then(m => m.Tab6PageModule)
   },
-
   {
     path: 'calendario',
     loadChildren: () => import('./calendario/calendario.module').then(m => m.CalendarioPageModule)
@@ -87,7 +82,8 @@ const routes: Routes = [
   {
     path: 'cal-modal',
     loadChildren: () => import('./cal-modal/cal-modal.module').then( m => m.CalModalPageModule)
-  },  {
+  },
+  {
     path: 'selecion-sexo',
     loadChildren: () => import('./selecion-sexo/selecion-sexo.module').then( m => m.SelecionSexoPageModule)
   },
@@ -95,7 +91,6 @@ const routes: Routes = [
     path: 'selecion-seguro',
     loadChildren: () => import('./selecion-seguro/selecion-seguro.module').then( m => m.SelecionSeguroPageModule)
   },
-
   
 ];
 @NgModule({

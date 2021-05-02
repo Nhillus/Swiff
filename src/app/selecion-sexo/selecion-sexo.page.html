@@ -1,7 +1,4 @@
 <style>
-
-  
-  
   .idioma {
     position: absolute;
     top: 0px;
@@ -17,7 +14,7 @@
   }
   .description
   {
-    width: 150px;
+    width: 100px;
     margin-left: 25px;
     font-size:9px;
     color: slategray;
@@ -89,10 +86,20 @@
     display: flex;
   }
 
- 
+  .container_mujer_radio {
+       
+  }
+  .android .container_hombre_radio {
+    position: relative;
+    left: 10px;
+  }
 
+  .ios .container_hombre_radio {
+    position: relative;
+    left: 45px;
+  }
   .hombre_radio {
-    padding-left: 55px;
+    
   }
   .inicio_container {
     position: absolute;
@@ -144,10 +151,7 @@
 <ion-header >
   <ion-toolbar color=base>
     <ion-row >
-      <ion-title>Selecciona sexo</ion-title>
-    </ion-row>
-    <ion-row>
-      <ion-label  class="ion-text-wrap description">Cree un perfil que mejor se adapte a usted</ion-label>
+      <ion-title mode="md">Selecciona sexo</ion-title>
     </ion-row>
     <div class="container_idioma">
       <ion-item color=base lines="none" class="idioma">
@@ -159,6 +163,9 @@
 </ion-header>
 
 <ion-content  class="content background" >
+  <ion-row>
+    <ion-label class="ion-text-wrap description">Cree un perfil que mejor se adapte a usted</ion-label>
+  </ion-row>
   <ion-grid>
     <div class="container_sex">
       <ion-row  size=3 >
@@ -183,11 +190,11 @@
       </ion-row>
       <ion-row class="container_radios">
         <ion-radio-group  class="radio_buttons">
-          <ion-item color=white class="mujer_radio"  >
-            <ion-radio  slot="start" value="mujer"></ion-radio>
+          <ion-item color=base class="container_mujer_radio" lines="none" >
+            <ion-radio  mode=md  slot="start" value="mujer"></ion-radio>
           </ion-item>
-          <ion-item color=white class="hombre_radio"  >
-            <ion-radio slot="end" value="hombre"></ion-radio>
+          <ion-item color=base class="container_hombre_radio" lines="none" >
+            <ion-radio  mode=md  slot="end" value="hombre"></ion-radio>
           </ion-item>
         </ion-radio-group>
       </ion-row>
