@@ -90,7 +90,11 @@ const routes: Routes = [
   {
     path: 'selecion-seguro',
     loadChildren: () => import('./selecion-seguro/selecion-seguro.module').then( m => m.SelecionSeguroPageModule)
+  },  {
+    path: 'pruebausuario',
+    loadChildren: () => import('./pruebausuario/pruebausuario.module').then( m => m.PruebausuarioPageModule)
   },
+
   
 ];
 @NgModule({
