@@ -110,14 +110,21 @@
   .description_compartir_redes {
     font-size: 7px;
   }
+  .ios .icon_back {
+    padding-top: 9px;
+  }
+  .icon_back {
+    height: 30px;
+    width: 30px;
+  }
 
 </style>
 <ion-header>
   <ion-toolbar color=base>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Ajustes</ion-title>
+    <ion-button color=base href="perfil" color="base" slot="start">
+      <ion-icon class="icon_back"  name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title mode=md >Ajustes</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -133,7 +140,7 @@
       </ion-col>
     </ion-item>
     <div>
-      <ion-item lines="none" class="container_arrow_right">
+      <ion-item Href="idiomas" lines="none" class="container_arrow_right">
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </ion-item>
     </div>

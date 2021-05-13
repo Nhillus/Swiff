@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, Input, Output, EventEmitter, ElementRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
  
 @Component({
@@ -46,4 +46,17 @@ export class CalModalPage implements AfterViewInit {
   close() {
     this.modalCtrl.dismiss();
   }
+  @ViewChild('fileInp') fileInput: ElementRef;
+  @Input() label: string;
+  @Output() data = new EventEmitter<FormData>();
+
+  fileUpload(event) {
+    let fd = new FormData();
+    fd.append('file', event.srcElement.files[0]);
+    this.data.emit(fd);
+  }
+
+  onClick() {
+    this.fileInput.nativeElement.click();
+}
 }

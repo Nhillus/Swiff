@@ -1,8 +1,18 @@
+<style>
+  .ios .icon_back {
+    padding-top: 9px;
+  }
+
+  .icon_back {
+    height: 30px;
+    width: 30px;
+  }
+</style>
 <ion-header>
   <ion-toolbar color=base>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Mensajes</ion-title>
+    <ion-button href="tabs" color="base" slot="start">
+      <ion-icon class="icon_back"  name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title mode=md >Mensajes</ion-title>
   </ion-toolbar>
 </ion-header>

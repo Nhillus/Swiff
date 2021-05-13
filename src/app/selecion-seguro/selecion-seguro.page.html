@@ -1,0 +1,208 @@
+<style>
+  .container_description {
+    width: 200px;
+  }
+
+   .description
+  {
+    margin-left: 25px;
+    font-size:9px;
+    color: slategray;
+  }
+
+  .user_edit {
+    position: relative;
+  }
+
+  .user_edit ion-item {
+    font-size: 11px;
+    height: 40px;
+    border-bottom: 1px solid #a59986;
+    padding: 0px 5px;
+    margin: 0px 5px;
+  }
+
+  ion-fab-button {
+    --background:transparent
+  }
+  
+  .add_secure {
+  position: relative;
+  left: 50px;
+  height: 20px;
+  width: 20px;
+  border: 3px solid red ;
+  border-radius: 50%;
+  }
+
+  .usuario {
+    margin: 0 auto;
+  }
+  
+  .alias {
+    font-size: 11px;
+  } 
+
+  .identidad {
+    font-size: 11px;
+    padding-left: 5px;
+  }
+  
+  .ifu {
+    padding-top: 40px;
+  }
+  
+  .ifui_center {
+    text-align: center;
+  }
+
+  .container_info {
+    box-shadow: none !important;
+  }
+  .label_color {
+    position: relative;
+    top: 5px;
+    font-size: 12px;
+    color: white;
+  }
+
+  .label_poliza {
+   position: relative;
+   left: 10px;
+   color: white;
+   font-size: 11px ;
+  }
+
+  .button_hochland {
+    height: 20px;
+    width: 60px;
+  }
+
+   ion-button .button_hochland_label {
+    text-transform: none;
+    font-size: 9px;
+  }
+
+  .container_check {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  .checkbox {
+    width: 8px;
+    height: 8px;
+  }
+
+  .label_checkbox {
+    font-size: 9px;
+    color: white;
+  }
+
+  .inicio_container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .inicio {
+    position: relative;
+    bottom:60px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #linea_blanca {
+    padding-top: 10px ;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-color: #938977;
+    border-width: 5px;
+    width: 50%;
+    position: absolute;
+    right: 0px ;
+    left: 0px;
+    bottom: 0px;
+    --min-height: 0px;
+    min-width: 50%;
+}
+
+.content {
+    position: relative;
+  }
+
+  ion-content.background{
+    --background: none;
+    background-image: url("../../assets/Fondos/lafondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 3;
+  }
+
+  .transparent {
+    --ion-background-color: transparent !important;
+    --ion-border-color: transparent !important;  
+  }
+</style>
+
+<ion-header>
+  <ion-toolbar color=base>
+  <ion-row mode=md>
+    <ion-title>Selecion tu seguro</ion-title>
+  </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content background" >
+  <ion-item  lines="none" class="transparent ion-no-padding container_description" >
+    <ion-label  class="ion-text-wrap description">Compare todos los seguros suizos y encuentre su mejor oferta.</ion-label>
+  </ion-item>
+  <br>
+  <br>
+  <ionn-list class="transparent user_edit">
+    <ion-card class="transparent container_info">
+      <ion-item class="transparent" >
+        <ion-label class="label_color" >Nombre</ion-label>
+        <ion-input  type="text"></ion-input>
+      </ion-item>
+      <ion-item class="transparent" >
+        <ion-label class="label_color">Apellido</ion-label>
+        <ion-input  type="text"></ion-input>
+      </ion-item>
+      <ion-item class="transparent" >
+        <ion-label class="label_color" >Fecha de nacimiento</ion-label>
+        <ion-input  type="text"></ion-input>
+      </ion-item>
+      <ion-item class="transparent" >
+        <ion-label class="label_color">Codigo Postal</ion-label>
+        <ion-input  type="text"></ion-input>
+      </ion-item>
+      <ion-item class="transparent" >
+        <ion-label class="label_color">Tipo de seguro</ion-label>
+        <ion-input  type="text"></ion-input>
+      </ion-item>
+      <ion-item class="transparent" >
+        <ion-label class="label_color">Numero de telefono</ion-label>
+        <ion-input  type="text"></ion-input>
+      </ion-item>
+      <ion-item class="transparent" >
+        <ion-label class="label_color" >E-mail</ion-label>
+        <ion-input  type="text"></ion-input>
+      </ion-item>
+    </ion-card>
+  </ionn-list>
+  <ion-item class="transparent container_carga" lines="none" >
+    <ion-label class="label_poliza" >Cargar Poliza:</ion-label>
+    <ion-button class="button_hochland" color=white> 
+      <ion-label class="button_hochland_label" >Hochland </ion-label> 
+    </ion-button>
+  </ion-item>
+  <div class="container_check">
+    <ion-checkbox class="checkbox" disabled="true"></ion-checkbox>
+    <ion-label class="label_checkbox"> Seguir Sin Utilizar Estas Opciones </ion-label>
+  </div>
+  <div class="inicio_container" >
+    <ion-button class="inicio" href="tabs" color="medium" expand="block">Iniciar Sesión</ion-button>
+  </div>
+  <ion-item id="linea_blanca"></ion-item>
+  </ion-content>

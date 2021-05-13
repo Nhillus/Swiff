@@ -116,14 +116,21 @@ ion-card {
   height: 70px;
   border: 7px solid #ebdabe;
 }
+.ios .icon_back {
+  padding-top: 9px;
+}
+.icon_back {
+  height: 30px;
+  width: 30px;
+}
 </style>
 
 <ion-header>
   <ion-toolbar color=base>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Vision en general</ion-title>
+    <ion-button color=base href="perfil" color="base" slot="start">
+      <ion-icon class="icon_back"  name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title  mode=md >Vision en general</ion-title>
   </ion-toolbar>
 </ion-header>
 

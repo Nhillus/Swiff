@@ -1,0 +1,208 @@
+<style>
+  .idioma {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .container_description
+  {
+    background-color: transparent;
+    position: relative;
+    bottom: 5px;
+    height: 40px;
+    width: 160px;
+  }
+  .description
+  {
+    width: 100px;
+    margin-left: 25px;
+    font-size:9px;
+    color: slategray;
+  }
+  .icon_chevron {
+    --ionicon-stroke-width: 15px;
+    font-size: 34px;
+    font-weight: 100;
+  }
+  .language_label {
+    color: white;
+    font-size: 14px;
+  }
+
+  ion-content.background{
+   --background: url(../../assets/Fondos/Triangulos.png) 0 0/100% 100% no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .container_sex {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container_s_img{
+    display: flex;
+  }
+  .container_male_sign {
+    width: 85px;
+    height: 85px;
+    -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .container_female_sign {
+    width: 85px;
+    height: 85px;
+    -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .label_female {
+    position: relative;
+    bottom: 10px;
+    left:45px;
+    color: whitesmoke;
+  }
+
+  .label_male {
+    position: relative;
+    left:35px;
+    bottom: 10px;
+    color: whitesmoke;
+  }
+
+  .container_radios {
+    display:block;
+    margin:0 auto;
+    width:70%;
+  }
+
+  .radio_buttons {
+    display: flex;
+  }
+
+  .container_mujer_radio {
+       
+  }
+  .android .container_hombre_radio {
+    position: relative;
+    left: 10px;
+  }
+
+  .ios .container_hombre_radio {
+    position: relative;
+    left: 45px;
+  }
+  .hombre_radio {
+    
+  }
+  .inicio_container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .inicio {
+    position: relative;
+    bottom:50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #linea_blanca {
+    padding-top: 10px ;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-color: #938977;
+    border-width: 5px;
+    width: 50%;
+    position: absolute;
+    right: 0px ;
+    left: 0px;
+    bottom: 0px;
+    --min-height: 0px;
+  }
+
+  .content {
+    position: relative;
+  }
+
+  ion-content.background{
+    --background: none;
+    background-image: url("../../assets/Fondos/lafondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 3;
+  }
+
+  .transparent {
+    --ion-background-color: transparent !important;
+    --ion-border-color: transparent !important;  
+  }
+
+</style>
+
+
+<ion-header >
+  <ion-toolbar color=base>
+    <ion-row >
+      <ion-title mode="md">Selecciona sexo</ion-title>
+    </ion-row>
+    <div class="container_idioma">
+      <ion-item color=base lines="none" class="idioma">
+        <ion-icon class="icon_chevron" color=red name="chevron-down-sharp"></ion-icon>
+        <ion-label  class="language_label">DE</ion-label>
+      </ion-item>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="content background" >
+  <ion-row>
+    <ion-label class="ion-text-wrap description">Cree un perfil que mejor se adapte a usted</ion-label>
+  </ion-row>
+  <ion-grid>
+    <div class="container_sex">
+      <ion-row  size=3 >
+          <ion-item-group  class="container_s_img">
+            <ion-col size=6>
+              <ion-item class="transparent" lines="none" >
+                <div class="container_male_sign">
+                  <ion-img class="foto_female" src="assets\Sexos\sex-Mujer.png">  </ion-img>
+                </div>
+              </ion-item>
+              <ion-label class="label_female"> Mujer</ion-label>
+            </ion-col>
+            <ion-col size=6>
+              <ion-item class="transparent" lines="none" >  
+                <div class="container_female_sign">
+                  <ion-img class="foto_male" src="assets\Sexos\sex-Hombre.png"> </ion-img> 
+                </div>
+              </ion-item>
+              <ion-label class="label_male"> Hombre</ion-label>
+            </ion-col>
+          </ion-item-group>
+      </ion-row>
+      <ion-row class="container_radios">
+        <ion-radio-group  class="radio_buttons">
+          <ion-item color=base class="container_mujer_radio" lines="none" >
+            <ion-radio  mode=md  slot="start" value="mujer"></ion-radio>
+          </ion-item>
+          <ion-item color=base class="container_hombre_radio" lines="none" >
+            <ion-radio  mode=md  slot="end" value="hombre"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-row>
+    </div>
+    <div class="inicio_container" >
+      <ion-button class="inicio" href="selecion-seguro" color="medium" expand="block">Iniciar Sesión</ion-button>
+    </div>
+  </ion-grid>
+  <div id="linea_blanca"></div>
+  
+</ion-content>
